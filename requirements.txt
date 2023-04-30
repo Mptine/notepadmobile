@@ -1,0 +1,90 @@
+Skip to content
+Commands
+Search
+
+Try Ghostwriter
+
+
+Help
+
+
+
+
+
+Enable "Accessible Terminal" in Workspace Settings to use a screen reader with the console.
+Booting ReplReady
+Desenvolvimento Front-end com React Native
+Chegou a hora de colocar em prática tudo que você aprendeu durante a disciplina! Crie uma aplicação React Native utilizando as boas práticas de desenvolvimento de front-end.
+
+Você vai implementar um front-end mobile para o sistema de anotações que já foi utilizado na disciplina anterior, de modo que sua aplicação pode utilizar os seguintes endpoints:
+
+PEGAR TODOS OS NOTEPADS
+GET https://webservices.jumpingcrab.com/api/notepads
+
+ADICIONAR UM NOVO NOTEPAD
+POST https://webservices.jumpingcrab.com/api/notepads
+{
+    "title": "Título aqui",
+    "subtitle": "Descrição aqui",
+    "content": "Conteúdo aqui.",
+    "coords": {
+      "lat": 38.8951,
+      "lng": -77.0364
+    }
+}
+
+DELETAR UM NOTEPAD PELO ID
+DELETE https://webservices.jumpingcrab.com/api/notepads/{id}
+
+PEGAR UM NOTEPAD PELO ID
+GET https://webservices.jumpingcrab.com/api/notepads/{id}
+
+ATUALIZAR UM NOTEPAD PELO ID
+PUT https://webservices.jumpingcrab.com/api/notepads/{id}
+{
+    "title": "Título aqui",
+    "subtitle": "Descrição aqui",
+    "content": "Conteúdo aqui.",
+    "coords": {
+      "lat": 38.8951,
+      "lng": -77.0364
+    }
+}
+
+Os endpoints de atualizar notepad e deletar notepad são opcionais!
+
+Para além dessas características estruturais, o seu projeto precisa ter os seguintes requisitos:
+
+Da estrutura do projeto
+Seu projeto deve ser organizado em componentes. Ou seja, você provavelmente vai ter arquivos como Button.tsx, InputText.tsx, Card.tsx, AppBar.tsx, etc. Além disso, você deve demonstrar competência em aplicar estilos utilizando styled-componentes e folhas de estilo.
+
+Do recurso de hooks
+Você deve utilizar os hooks do React para gerenciar o estado da aplicação e executar trechos de código em reação aos re-renders dos componentes. Pode-se utilizar os hooks para qualquer finalidade, desde que façam parte de uma funcionalidade do seu site. Quanto a responsividade do site, você deve implementá-la utilizando FlexBox, algo bem básico, conforme será visto durante as aulas. Por fim, você pode optar por utilizar Axios ou fetch para realizar requisições assíncronas. Destaca-se que você pode pontuar este item de rubrica junto com o requisito de consumir endpoints JSON em seu projeto.
+
+Da navegação com React Navigation
+Você deve utilizar a biblioteca React Navigation para implementar a navegação do seu site. Assim, você deve criar a estrutura de navegação do seu aplicativo utilizando um drawer, menu inferior, navegação por pilha, etc.
+
+Do uso de geolocalização e mapas
+Para demonstrar essa competência você deve renderizar um mapa em seu app. Esse mapa também precisa ter uma lista de marcadores, de modo que, ao clica-los, deve levar o usuário para outra página. Você também deve obter a localização do usuário e mostra-la no mapa.
+
+Após finalizar todo o processo de desenvolvimento e realizar os testes de funcionamento da aplicação, disponibilize os códigos-fontes através do GitHub. Este repositório precisa ser enviado para avaliação através de um arquivo PDF que possua informações da Instituição, do curso, da disciplina, do professor e do aluno.
+
+Assim que terminar, salve o seu arquivo PDF e poste no Moodle. Utilize o seu nome para nomear o arquivo, identificando também a disciplina no seguinte formato: “nomedoaluno_nomedadisciplina_pd.PDF”.
+
+Rubricas:
+Desenvolver aplicações com propriedades, estados, contextos, hooks e rotas	O aluno configurou o build do projeto corretamente?
+Desenvolver aplicações com propriedades, estados, contextos, hooks e rotas	O aluno utilizou TypeScript em seu projeto?
+Desenvolver aplicações com propriedades, estados, contextos, hooks e rotas	O aluno implementou componentes que utilizam hooks?
+Desenvolver aplicações com propriedades, estados, contextos, hooks e rotas	O aluno configurou o ícone e o nome do app?
+Desenvolver layouts responsivos com React Native	O aluno separou seu código em componentes?
+Desenvolver layouts responsivos com React Native	O aluno utilizou styled-components?
+!!!!!!!!!! Desenvolver layouts responsivos com React Native	O aluno utilizou folhas de estilo?
+Desenvolver layouts responsivos com React Native	O aluno utilizou FlexBox em seu projeto?
+Desenvolver aplicações com múltiplas telas e coleções com React Native	O aluno implementou ao menos três telas diferentes?
+Desenvolver aplicações com múltiplas telas e coleções com React Native	O aluno implementou a navegação entre as telas?
+Desenvolver aplicações com múltiplas telas e coleções com React Native	O aluno passou propriedades entre as telas?
+Desenvolver aplicações com múltiplas telas e coleções com React Native	O aluno implementou uma lista de itens com eventos de toque?
+Desenvolver aplicações com geolocalização e mapas com React Native	O aluno implementou o carregamento da geolocalização do dispositivo?
+Desenvolver aplicações com geolocalização e mapas com React Native	O aluno utilizou uma view de mapa em seu projeto?
+Desenvolver aplicações com geolocalização e mapas com React Native	O aluno carregou a geolocalização do dispositivo no mapa?
+Desenvolver aplicações com geolocalização e mapas com React Native	O aluno plotou uma lista de elementos com eventos de toque no mapa?
